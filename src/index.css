@@ -1,0 +1,462 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+* {
+	box-sizing: border-box;
+	padding:0;
+	margin:0;
+ }
+
+body {
+	font-family: 'DM Sans', sans-serif;
+	background-color: #212121;
+	color: #fff;
+}
+
+.landing {
+	max-width: 90rem;
+	margin: 6.19625rem  auto;
+	display: flex;
+	justify-content:center;
+	flex-direction: column;
+	align-items: center;
+}
+
+.logo {
+	 width: 2.75rem; 
+	 height: 2rem; 
+}
+
+.landing ul {
+	list-style: none;
+	display: flex;
+	margin-top: 3.34375rem;
+	gap: 3.25rem;
+}
+
+.landing h1 {
+	margin: 0.640625rem 0 1rem 0;
+	font-weight:400;
+	font-size: 2rem;
+}
+
+.landing h2 {
+	font-family: 'Inter', sans-serif;
+	font-size: 1rem;
+	line-height: 1.1875rem;
+	opacity: 0.7;
+}
+
+#landing-img {
+	max-width: 62.5rem; 
+	max-height: 25.3125rem;
+	position: absolute;
+	bottom: 0;
+}
+
+.order {
+	margin-top: 3.34375rem;
+	display: flex;
+	gap: 25px;
+}
+
+.dot {
+	height:25px;
+	width:25px;
+	background-color: #FF6E30;
+	border-radius: 50%;
+	display: inline-block;
+	text-align: center;
+	margin-right: 12px;
+}
+
+#link {
+	opacity: 0.5;
+}
+
+
+p {
+	display: inline-block;
+}
+
+
+.content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	text-align: center;
+	position: absolute;
+	gap: 10rem; 
+	top: 25%;
+	left: 20%;
+}
+
+.doggo h2 {
+	/* margin: 0.640625rem 0 1rem 0; */
+	margin-top: 0.45375rem;
+	font-weight:400;
+	font-size: 1.3625rem;
+}
+
+.doggo h1 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 400;
+	margin-top: 3.20875rem;
+}
+
+.doggo p {
+	font-family: 'Inter', sans-serif;
+	font-weight:400;
+	opacity: 0.6;
+	margin-top: 1.0625rem;
+	margin-bottom: 1.875rem;
+}
+
+#google-calendar {
+	border-top: 1.15625rem;
+	border-bottom: 1.15625rem;
+	background-color: #141414;	
+	width: 18.25rem;
+	height: 3.5rem;
+	text-align: center;
+	border-radius: 0.5rem;
+	/* margin-left: 4.375rem; */
+	text-decoration: none;
+}
+
+#google-calendar:hover {
+	cursor: pointer;
+}
+
+#google-calendar span {
+	font-family: 'Inter', sans-serif;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 1rem;
+	opacity: 1;
+	display: inline-block;
+	margin-top: 1.0625rem;
+	margin-left : 5px;
+	cursor: pointer;
+}
+
+#google-calendar img {
+	vertical-align: middle;
+}
+
+
+.doggo-btn {
+	position: absolute;
+	right: 1.9375rem;
+	bottom: 1.875rem;
+	background: rgba(0, 0, 0, 0.3);
+	border: 1px solid rgba(255, 255, 255, 0.3);
+	border-radius: 40px;
+	width: 154px;
+	height: 44px;
+	color: #fff;
+}
+
+.enough {
+	width: 48.9375rem;
+	height: 26.8125rem;
+}
+
+
+
+.flex {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.main {
+ 	background-color: #141414; 
+	display: flex;
+	height: 100vh;
+}
+
+.meetings {
+	height: 100vh;
+	width: 50%;
+}
+
+.input-search {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 2rem 3.25rem;
+}
+
+.input-search input {
+	outline: none;
+	background: transparent;
+	border: none;
+	color: #fff;
+	display: inline-block;
+	opacity: 0.8;
+	font-size: 1.125rem;
+}
+
+.input-search span {
+	font-size: 0.875rem;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.input-search img {
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 0.5rem;
+}
+
+/* .card-1 { */
+/* 	display: flex; */
+/* 	justify-content: space-between; */
+/* 	margin: 2rem 3.25rem; */
+/* 	align-items: center; */
+/* } */
+/**/
+/* #date-box-orange { */
+/* 	font-size: 0.775rem; */
+/* 	font-weight: 700; */
+/* 	width: 3rem; */
+/* 	height: 3rem; */
+/* 	background: linear-gradient(0deg, #FF6E30, #FF6E30), #3038FF; */
+/* 	border-radius: 0.5rem; */
+/* 	text-align: center; */
+/* 	vertical-align: middle; */
+/* 	padding-top: 0.875rem; */
+/* 	padding-left: 0.3rem; */
+/* 	padding-right: 0.3rem; */
+/* } */
+/**/
+/* .card-1 :nth-child(2) { */
+/* 	margin-right: 9rem; */
+/* 	font-size: 1rem; */
+/* } */
+/**/
+/* .card-1 :nth-child(2) p { */
+/* 	margin-top: 0.75rem;	 */
+/* } */
+/**/
+/* .meeting-link { */
+/* 	text-align: center; */
+/* 	display: flex; */
+/* 	font-size: 0.875rem; */
+/* 	align-self: center; */
+/* 	text-decoration: none; */
+/* 	gap: 1rem; */
+/* 	margin-left: 1rem; */
+/* }  */
+/**/
+/* .meeting-link a { */
+/* 	color: #fff; */
+/* 	white-space: nowrap; */
+/* } */
+/**/
+/* .meeting-link img { */
+/* 	text-align: center; */
+/* 	vertical-align: middle; */
+/* 	padding-left: 0.625rem; */
+/* } */
+
+.card-1 {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+	align-items: center;
+	width: 100%;
+}
+
+.card-1 :nth-child(2) {
+	margin-right: 5rem;
+	font-size: 1rem;
+}
+
+.card-1 :nth-child(2) p {
+	margin-top: 0.75rem;	
+}
+
+#date-box-orange { 
+ 	font-size: 0.775rem; 
+ 	font-weight: 700; 
+ 	width: 3rem; 
+ 	height: 3rem; 
+ 	background: linear-gradient(0deg, #FF6E30, #FF6E30), #3038FF; 
+	border-radius: 0.5rem; 
+ 	text-align: center; 
+ 	vertical-align: middle; 
+ 	padding-top: 0.875rem; 
+ 	padding-left: 0.3rem; 
+ 	padding-right: 0.3rem;
+	margin-left: 3.25rem;
+} 
+
+.meeting-link {
+	display: flex;
+	white-space: nowrap;
+	margin-left: 18rem;
+	margin-right: -1.4rem;
+	gap:0.55rem;
+	text-decoration: none;
+	color: #fff;
+	vertical-align: center;
+
+}
+
+.meeting-link a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.card-2 {
+	display: flex;
+	justify-content: space-between;
+	margin: 2rem 3.25rem;
+	align-items: center;
+}
+
+
+.card-2 :nth-child(2) {
+	margin-right: 15rem;
+	font-size: 1rem;
+}
+
+.card-2 :nth-child(2) p {
+	margin-top: 0.75rem;	
+}
+
+#date-box-blue {
+	font-size: 0.875rem;
+	font-weight: 700;
+	width: 3rem;
+	height: 3rem;
+	background: #3038FF;
+	border-radius: 0.5rem;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 0.875rem;
+	padding-left: 0.3rem;
+	padding-right: 0.3rem;
+}
+
+.note-link {
+	background: #2B2B2B;
+	border-radius: 2.5rem;
+	width: 7.8125rem;
+	height: 2.5625rem;
+	text-align: center;
+	vertical-align: middle;
+	padding-top: 0.575rem;
+}
+
+#seperation {
+	width: 100%;
+	opacity: 0.1;
+	border: 0.0625rem solid #fff;
+
+}
+
+.notes {
+	height: 100vh;
+	width: 50%;
+	border-top: 0.25rem solid #FF6E30;
+
+}
+
+.note-flex {
+	display: flex;
+	flex-direction: column;
+	margin: 2.25rem 2rem 0 2.25rem;
+}
+
+.note-flex h2 {
+	font-size: 0.75rem;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: 0.15em;
+	line-height: 1rem;
+	opacity: 0.6;
+	margin-bottom: 1.5rem;
+}
+
+.note-flex h1 {
+	font-size: 1.5rem;
+	font-family: 'DM Sans', sans-serif;
+	font-weight: 700;
+	letter-spacing: -0.03em;
+	margin-bottom: 0.75rem;
+
+}
+
+.note-flex h3 {
+	font-family: 'Inter', sans-serif;
+	font-size: 0.875rem;
+	font-weight: 400;
+	line-height: 1.0625rem;
+	margin-bottom: 2rem;
+}
+
+#textArea {
+	background: transparent;
+	border: 0;
+	outline: none;
+	color: #fff;
+	background: #1E1E1E;
+	/* width: 41.875rem; */
+	/* height: 29.9375rem; */
+	margin-bottom: 1.75rem;
+	resize: none;
+}
+
+.save-button {
+	width: 100%;
+	background: #1C1F5A;
+	border-radius: 2.5rem;
+	height: 3.0625rem;
+	outline: none;
+	border: none;
+	color: #fff;
+}
+
+#half {
+	transform: rotate(deg90);
+	position: absolute;
+	left: 50%;
+	height: 100vh;
+	border: 0.125rem solid #fff;
+	opacity: 0.1;
+}
+
+.gsign-logo {
+	background-color: #fff;
+	border-radius: 40px;
+	color: #000;
+	text-align: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	width: 199px;
+	gap: 12px;
+	position: absolute;
+	top: 150px;
+	left: 200px;
+}
+
+.gsign-logo:hover{
+	cursor: pointer;
+}
+
+.google-sign {
+	position: fixed;
+	top: 3%;
+	right: 3%;
+	border-radius: 0.5rem; 
+}
+
+
+#react-link {
+	text-decoration: none;
+	color: #fff;
+}
