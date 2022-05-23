@@ -18,7 +18,15 @@ export default function Main() {
 	const [data, setData] = useState([])
 	const [isDataFetched, setIsDataFetched ] =  useState(false)
 	const [noTasks, setNoTasks] = useState(false)	
-	const [defaultData, setDefaultData] = useState([{}])
+	const [defaultData, setDefaultData] = useState([{
+		summary: 'Click on a task',
+		start: {
+			dateTime: '00-00'
+		},
+		end : {
+			dateTime: '00-00'
+		}
+	}])
 	useEffect(() => {
 		gapi.load('client:auth2', () => {
 			gapi.client.init({
@@ -41,6 +49,7 @@ export default function Main() {
 	// 	return () => clearTimeout(timer)
 	// }, []);
 	console.log(data)
+	console.log(defaultData[0].summary,'THIS Is usmmary')
 	console.log(defaultData, 'THIS IS DEFAULT DATA')
 
 	async function listUpcomingEvents(){
@@ -177,7 +186,8 @@ export default function Main() {
 
 	const [meetingData, setMeetingData] = useState([])
 	const [isMeetingData, isSetMeetingData] = useState(false)	
-
+	console.log(meetingData, 'THIS IS MEETING DATA')
+	console.log(isMeetingData, 'THIS IS isMeetingData')
 	if (isDataFetched) {
 
 	}
@@ -233,7 +243,7 @@ export default function Main() {
 
 			</div>
 			<div className="notes">
-			{ isDataFetched && isMeetingData  ?  <Notes meetData={meetingData} dateConversion={dateConversion}/> : isDataFetched && <Notes meetData={defaultData} dateConversion={dateConversion}/> }
+			{ isDataFetched && isMeetingData  ?  <Notes meetData={meetingData} dateConversion={dateConversion}/> : isDataFetched && <Notes meetData={defaultData[0]} dateConversion={dateConversion}/> }
 			</div>
 			<hr id="half" />
 			

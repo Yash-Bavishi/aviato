@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Notes({meetData, dateConversion}) {
-	console.log(meetData)
+	console.log(meetData, "THIS IS meetData")
 	console.log(meetData.summary)
 	return (
 	<div className="note-flex">
